@@ -3,7 +3,7 @@
 cat /proc/cpuinfo |grep "physical id" |sort |uniq|wc -l
 ````
 
-###### 查看每个物理cpu核数
+##### 查看每个物理cpu核数
 ````
 cat /proc/cpuinfo |grep "cpu cores" |uniq
 ````
@@ -17,3 +17,5 @@ cat /proc/meminfo
 ````
 fdisk -l
 ````
+
+
