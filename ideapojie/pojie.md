@@ -4,7 +4,7 @@
 ````
 -javaagent:[jetbrain_3.1.jar的路径]
 ````
-
+#### 输入激活码如下
 ````
 {"licenseId":"ThisCrackLicenseId",
 "licenseeName":"lsj",
@@ -32,3 +32,4 @@
 "hash":"2911276/0",
 "gracePeriodDays":7,
 "autoProlongated":false}
+````
