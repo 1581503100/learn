@@ -1,4 +1,4 @@
-#### 1 下载[jetbrain_3.1.jar](/jetbrain_3.1.jar)
+#### 1 下载[jetbrain_3.1.jar](/ideapojie/jetbrain_3.1.jar)
 
 #### 2 进入idea安装目录的bin目录下，在idea.exe.vmoptions和idea64.exe.vmoptions 最后加上
 ````
