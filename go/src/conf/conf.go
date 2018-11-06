@@ -3,15 +3,14 @@ package conf
 import (
 	"bufio"
 	"bytes"
-	"github.com/astaxie/beego/logs"
 	"io"
 	"os"
+	"reflect"
 	"strconv"
 	"strings"
 )
 var confMap = map[string]string{}
 var reloadFuns []func()
-
 
 func Init(files ...string){
 	for _,v:=range files{
@@ -20,6 +19,10 @@ func Init(files ...string){
 }
 func InitWithBytes(b []byte)  {
 	reader:=bytes.NewReader(b)
+	parser(reader)
+}
+
+func InitWithReader(reader io.Reader)  {
 	parser(reader)
 }
 func parserFile(file string)  {
@@ -35,21 +38,30 @@ func parser(reader io.Reader)  {
 	scaner:=bufio.NewScanner(reader)
 	for scaner.Scan(){
 		line:=scaner.Text()
-		if(strings.HasPrefix(line,"#") || len(line)==0){
-			continue
-		}
-		idx:=strings.Index(line,"=")
-		if(idx ==0 ){
-			continue
-		}
-		confMap[deleteSpace(line[0:idx])]=deleteSpace(line[idx+1:])
+		addProperity(line)
 	}
-
-	logs.Info("------------------------load config:",confMap)
+	//callback functions while config is reload or init
 	for _,v:=range reloadFuns{
 		v()
 	}
 }
+
+func Set(k,v string)  {
+	confMap[k]=v
+}
+
+func addProperity(line string)  {
+	line = deleteSpace(line)
+	if(strings.HasPrefix(line,"#") || len(line)==0){
+		return
+	}
+	idx:=strings.Index(line,"=")
+	if(idx ==0 ){
+		return
+	}
+	confMap[deleteSpace(line[0:idx])]=deleteSpace(line[idx+1:])
+}
+
 //return int value of giving key
 func String(key string)string  {
 	return confMap[key]
@@ -115,4 +127,42 @@ func deleteSpace(s string) string {
 
 func AddReloadHanler(f func()){
 	reloadFuns =append(reloadFuns,f)
+}
+func toLine(s string) string {
+	if(len(s)==0){
+		return ""
+	}
+	var bf []byte
+	sp := 'A'-'a'
+	if(s[1]>='A' && s[0]<='Z'){
+		bf=append(bf,s[0]-byte(sp))
+	} else{
+		bf=append(bf,s[0])
+	}
+	for i:=1;i< len(s);i++{
+		if(s[i]<='Z' && s[i]>='A'){
+			bf=append(bf,'_',s[i]-byte(sp))
+		}else {
+			bf=append(bf,s[i])
+		}
+	}
+	return string(bf)
+}
+func Unmarshal(i interface{},prefix string)  {
+	t:=reflect.TypeOf(i)
+	v:=reflect.ValueOf(i).Elem()
+	for i:=0;i<t.NumField();i++{
+		field:=t.Field(i)
+		tag:=field.Tag.Get("json")
+		if(tag == ""){
+			tag = toLine(field.Name)
+		}
+		if(field.Type.Name()=="string"){
+			v.Field(i).Set(reflect.ValueOf(String(prefix+field.Name)))
+		}
+		if(field.Type.Name()=="int"){
+			v.Field(i).Set(reflect.ValueOf(Int(prefix+field.Name,0)))
+		}
+	}
+
 }
