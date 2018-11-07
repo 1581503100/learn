@@ -9,7 +9,7 @@
 {"licenseId":"ThisCrackLicenseId",
 "licenseeName":"lsj",
 "assigneeName":"sd",
-"assigneeEmail":"sl，f",
+"assigneeEmail":"lks@111.com",
 "licenseRestriction":"fs，fs",
 "checkConcurrentUse":false,
 "products":[
