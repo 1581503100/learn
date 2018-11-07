@@ -1,1 +1,5 @@
-#### go formate [here](/go/doc/formate.md)
+## Index
+
+#### Go
+
+- [go formate](/go/doc/formate.md)
