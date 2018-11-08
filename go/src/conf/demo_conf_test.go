@@ -3,6 +3,7 @@ package conf
 import (
 	"fmt"
 	"testing"
+	"strings"
 )
 
 type A struct {
@@ -23,4 +24,7 @@ func Test(t *testing.T) {
 }
 func TestName(t *testing.T) {
 	fmt.Println(toLine("JavaHome"))
+	fmt.Println(toLine("nameSpaceAdd"))
+	fmt.Println(strings.SplitN("a=b=c","=",2))
+	fmt.Println(strings.ToTitle())
 }

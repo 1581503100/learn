@@ -4,6 +4,7 @@ import (
 	"conf"
 	"fmt"
 	"testing"
+	"strings"
 )
 
 type A struct {
@@ -37,4 +38,8 @@ func TestCLi(t *testing.T)  {
 	})
 	fmt.Println(conf.String("port"))
 	fmt.Println(conf.String("name"))
+}
+func TestTrim(t *testing.T)  {
+
+	fmt.Println(strings.Trim(" !!!hello !!"," ! o"))
 }

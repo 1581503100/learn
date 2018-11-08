@@ -36,7 +36,7 @@ func InitWithBytes(b []byte) {
 func InitWithReader(reader io.Reader) {
 	parser(reader)
 }
-
+//init the config with args from commond line
 func InitWithCli(flags []Flag)  {
 
 	for i:=0;i< len(flags);i++{
@@ -47,6 +47,7 @@ func InitWithCli(flags []Flag)  {
 		Set(v.Key,*v.val)
 	}
 }
+
 func parserFile(file string) {
 	f, err := os.Open(file)
 	defer f.Close()
@@ -135,45 +136,63 @@ func Strings(key string) []string {
 
 //delete space '\n '\t' '\r' of begin and end of string
 func deleteSpace(s string) string {
-	var st, ed int
-	for i, _ := range s {
-		if (s[i] != ' ' && s[i] != '\n' && s[i] != '\r' && s[i] != '\t') {
-			st = i;
-			break
-		}
-	}
-	for i := len(s) - 1; i >= 0; i-- {
-		if (s[i] != ' ' && s[i] != '\n' && s[i] != '\r' && s[i] != '\t') {
-			ed = i + 1
-			break
-		}
-	}
-	return s[st:ed]
+	//var st, ed int
+	//for i, _ := range s {
+	//	if (s[i] != ' ' && s[i] != '\n' && s[i] != '\r' && s[i] != '\t') {
+	//		st = i;
+	//		break
+	//	}
+	//}
+	//for i := len(s) - 1; i >= 0; i-- {
+	//	if (s[i] != ' ' && s[i] != '\n' && s[i] != '\r' && s[i] != '\t') {
+	//		ed = i + 1
+	//		break
+	//	}
+	//}
+	return strings.Trim(s," \r\n\t")
 }
 
 func AddReloadHanler(f func()) {
 	reloadFuns = append(reloadFuns, f)
 }
+
 func toLine(s string) string {
 	if (len(s) == 0) {
 		return ""
 	}
-	var bf []byte
-	sp := 'A' - 'a'
+	var bf bytes.Buffer
+	sp := ('A' - 'a')
 	if (s[1] >= 'A' && s[0] <= 'Z') {
-		bf = append(bf, s[0]-byte(sp))
+		bf.WriteByte(s[0]-byte(sp))
 	} else {
-		bf = append(bf, s[0])
+		bf.WriteByte(s[0])
 	}
 	for i := 1; i < len(s); i++ {
 		if (s[i] <= 'Z' && s[i] >= 'A') {
-			bf = append(bf, '_', s[i]-byte(sp))
+			bf.WriteByte('_')
+			bf.WriteByte(s[i]-byte(sp))
 		} else {
-			bf = append(bf, s[i])
+			bf.WriteByte(s[i])
 		}
 	}
-	return string(bf)
+	return bf.String()
 }
+
+func toUp(s string)  string{
+	if(s ==""){
+		return s
+	}
+	sp:='A'-'a'
+	var bf bytes.Buffer
+	if(s[0]<='Z' && s[0]>='A'){
+		bf.WriteByte(s[0]-byte(sp))
+	}else {
+		bf.WriteByte(s[0])
+	}
+	bf.WriteString(s[1:])
+	return bf.String()
+}
+
 func Unmarshal(i interface{}, prefix string) {
 	t := reflect.TypeOf(i).Elem()
 	v := reflect.ValueOf(i).Elem()
@@ -183,18 +202,19 @@ func Unmarshal(i interface{}, prefix string) {
 		if (tag == "") {
 			tag = toLine(field.Name)
 		}
+		key:=prefix+tag
 		switch field.Type.Name() {
 			case "string":
-				v.Field(i).Set(reflect.ValueOf(String(prefix + tag)));
+				v.Field(i).Set(reflect.ValueOf(String(key)));
 				break
 			case "int":
-				v.Field(i).Set(reflect.ValueOf(Int(prefix+tag, 0)));
+				v.Field(i).Set(reflect.ValueOf(Int(key, 0)));
 				break
 			case "float64":
-				v.Field(i).Set(reflect.ValueOf(Float64(prefix+tag, 0)));
+				v.Field(i).Set(reflect.ValueOf(Float64(key, 0)));
 				break
 			case "bool":
-				v.Field(i).Set(reflect.ValueOf(Bool(prefix+tag, false)));
+				v.Field(i).Set(reflect.ValueOf(Bool(key, false)));
 				break
 		}
 	}
