@@ -4,12 +4,11 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
-	"github.com/urfave/cli"
 	"os"
-	"github.com/joho/godotenv"
 	"tools/request"
 	"tools/utils"
 	"strings"
+	"conf"
 )
 
 func main()  {
@@ -17,36 +16,27 @@ func main()  {
 		fmt.Println("run get -h")
 		return
 	}
-	if env := os.Getenv("PLUGIN_ENV_FILE"); env != "" {
-		godotenv.Load(env)
-	}
 
-	app:=cli.NewApp()
-	app.Name="get"
-	app.Usage="get http"
-	app.Action=run
-	app.Version="1.0.0"
-	app.Flags=[]cli.Flag{
-		cli.StringFlag{
-			Name:"u",
-			Usage:"http url you want to visit like http://www.baidu.com",
+	conf.InitWithCli([]conf.Flag{
+		conf.Flag{
+			Key:   "u",
+			Usage: "http url you want to visit like http://www.baidu.com",
 		},
-		cli.StringFlag{
-			Name:"f",
-			Usage:"file you want to save the response",
+		conf.Flag{
+			Key:   "f",
+			Usage: "file you want to save the response",
 		},
-		cli.StringFlag{
-			Name:"grep",
-			Usage:"find line you want",
+		conf.Flag{
+			Key:   "grep",
+			Usage: "find line you want",
 		},
-	}
-	if err:=app.Run(os.Args);err!=nil{
-		fmt.Println(err)
-	}
+	})
+	fmt.Println("grep:"+conf.String("grep"))
+	run()
 }
-func run(c *cli.Context)  {
+func run()  {
 	url:=os.Args[1]
-	file:=c.String("f")
+	file:=conf.String("f")
 	if(len(url)==0){
 		fmt.Println("run get -help")
 		return
@@ -56,7 +46,8 @@ func run(c *cli.Context)  {
 		utils.SaveFile(file,resp)
 	}else {
 
-		grep:=c.String("grep")
+		grep:=conf.String("grep")
+		fmt.Println(grep)
 		if(len(grep)==0){
 			fmt.Println(string(resp))
 			return
