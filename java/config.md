@@ -1,7 +1,7 @@
 
 #### Spring 读取yml
 
-````
+```java
 public class YamlUtils {
     private static final Logger logger = LogManager.getLogger(YamlUtils.class);
 
@@ -28,4 +28,29 @@ public class YamlUtils {
     }
 }
 
-````
+
+```
+#### 读取properties 文件
+```java
+public class PropertiesUtils{
+    public static Properties properties;
+    
+    
+    public static void init(){
+        properties = new Properties();
+        try{
+            properties.load(new FileInputStream());
+
+        }catch (Exception e){
+            e.printStackTrace(); 
+        }
+    }
+    
+    public static String get(String key){
+        if(properties == null){
+            init();
+        }
+        return properties.getProperties(key);
+    }
+}
+```
