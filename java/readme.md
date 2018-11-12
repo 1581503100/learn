@@ -1,4 +1,3 @@
-# index
 
 1. [Spring read .yml](config.md)
 
