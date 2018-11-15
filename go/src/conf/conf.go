@@ -36,15 +36,16 @@ func InitWithBytes(b []byte) {
 func InitWithReader(reader io.Reader) {
 	parser(reader)
 }
-//init the config with args from commond line
-func InitWithCli(flags []Flag)  {
 
-	for i:=0;i< len(flags);i++{
-		flags[i].val=flag.String(flags[i].Key,flags[i].Default,flags[i].Usage)
+//init the config with args from commond line
+func InitWithCli(flags []Flag) {
+
+	for i := 0; i < len(flags); i++ {
+		flags[i].val = flag.String(flags[i].Key, flags[i].Default, flags[i].Usage)
 	}
 	flag.Parse()
-	for _,v:=range flags{
-		Set(v.Key,*v.val)
+	for _, v := range flags {
+		Set(v.Key, *v.val)
 	}
 }
 
@@ -74,20 +75,27 @@ func Set(k, v string) {
 }
 
 func addProperity(line string) {
-	line = deleteSpace(line)
-	if (strings.HasPrefix(line, "#") || len(line) == 0) {
+	if (strings.HasPrefix(line, "#") || len(line) == 0 || !strings.Contains(line, "=")) {
 		return
 	}
-	idx := strings.Index(line, "=")
-	if (idx == 0) {
+	lis := strings.SplitN(line, "=", 2)
+	if (len(lis) != 2) {
 		return
 	}
-	confMap[deleteSpace(line[0:idx])] = deleteSpace(line[idx+1:])
+	confMap[deleteSpace(lis[0])] = deleteSpace(lis[1])
 }
 
 //return int value of giving key
 func String(key string) string {
 	return confMap[key]
+}
+
+func StringD(k, def string) string {
+	v := confMap[k]
+	if v == "" {
+		return def
+	}
+	return v
 }
 
 //return int value of giving key and return defaultVal by default
@@ -131,25 +139,41 @@ func Strings(key string) []string {
 	if (confMap[key] == "") {
 		return []string{}
 	}
-	return strings.Split(confMap[key], ",")
+	return trimStrs(strings.Split(confMap[key], ","))
+}
+
+// return string array value of specific key spliting by specific sep
+func StringsS(k, sep string) []string {
+	if confMap[k] == "" {
+		return []string{}
+	}
+	return trimStrs(strings.Split(confMap[k], sep))
+}
+func Ints(k string)[]int  {
+	if confMap[k] == "" {
+		return []int{}
+	}
+	vs:=Strings(k)
+	var vals []int
+	for _,v:=range vs{
+		iv,err:=strconv.Atoi(v)
+		if(err !=nil){
+			panic(err)
+		}
+		vals = append(vals,iv)
+	}
+	return vals
+}
+func trimStrs(ss []string) []string {
+	for i := 0; i < len(ss); i++ {
+		ss[i] = deleteSpace(ss[i])
+	}
+	return ss
 }
 
 //delete space '\n '\t' '\r' of begin and end of string
 func deleteSpace(s string) string {
-	//var st, ed int
-	//for i, _ := range s {
-	//	if (s[i] != ' ' && s[i] != '\n' && s[i] != '\r' && s[i] != '\t') {
-	//		st = i;
-	//		break
-	//	}
-	//}
-	//for i := len(s) - 1; i >= 0; i-- {
-	//	if (s[i] != ' ' && s[i] != '\n' && s[i] != '\r' && s[i] != '\t') {
-	//		ed = i + 1
-	//		break
-	//	}
-	//}
-	return strings.Trim(s," \r\n\t")
+	return strings.Trim(s, " \r\n\t")
 }
 
 func AddReloadHanler(f func()) {
@@ -163,14 +187,14 @@ func toLine(s string) string {
 	var bf bytes.Buffer
 	sp := ('A' - 'a')
 	if (s[1] >= 'A' && s[0] <= 'Z') {
-		bf.WriteByte(s[0]-byte(sp))
+		bf.WriteByte(s[0] - byte(sp))
 	} else {
 		bf.WriteByte(s[0])
 	}
 	for i := 1; i < len(s); i++ {
 		if (s[i] <= 'Z' && s[i] >= 'A') {
 			bf.WriteByte('_')
-			bf.WriteByte(s[i]-byte(sp))
+			bf.WriteByte(s[i] - byte(sp))
 		} else {
 			bf.WriteByte(s[i])
 		}
@@ -178,15 +202,15 @@ func toLine(s string) string {
 	return bf.String()
 }
 
-func toUp(s string)  string{
-	if(s ==""){
+func toUp(s string) string {
+	if (s == "") {
 		return s
 	}
-	sp:='A'-'a'
+	sp := 'A' - 'a'
 	var bf bytes.Buffer
-	if(s[0]<='Z' && s[0]>='A'){
-		bf.WriteByte(s[0]-byte(sp))
-	}else {
+	if (s[0] <= 'Z' && s[0] >= 'A') {
+		bf.WriteByte(s[0] - byte(sp))
+	} else {
 		bf.WriteByte(s[0])
 	}
 	bf.WriteString(s[1:])
@@ -202,22 +226,26 @@ func Unmarshal(i interface{}, prefix string) {
 		if (tag == "") {
 			tag = toLine(field.Name)
 		}
-		key:=prefix+tag
+		key := prefix + tag
 		switch field.Type.Name() {
-			case "string":
-				v.Field(i).Set(reflect.ValueOf(String(key)));
-				break
-			case "int":
-				v.Field(i).Set(reflect.ValueOf(Int(key, 0)));
-				break
-			case "float64":
-				v.Field(i).Set(reflect.ValueOf(Float64(key, 0)));
-				break
-			case "bool":
-				v.Field(i).Set(reflect.ValueOf(Bool(key, false)));
-				break
+		case "string":
+			v.Field(i).Set(reflect.ValueOf(String(key)));
+			break
+		case "int":
+			v.Field(i).Set(reflect.ValueOf(Int(key, 0)));
+			break
+		case "float64":
+			v.Field(i).Set(reflect.ValueOf(Float64(key, 0)));
+			break
+		case "bool":
+			v.Field(i).Set(reflect.ValueOf(Bool(key, false)));
+			break
+		case "[]string":
+			v.Field(i).Set(reflect.ValueOf(String(key)));
+			break
+		case "[]int":
+			v.Field(i).Set(reflect.ValueOf(Ints(key)));
+			break
 		}
 	}
-
 }
-

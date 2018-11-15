@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80429773-d0fb-4a2c-b4e4-456fda256f5c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/go/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idea/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/idea/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ideapojie/jetbrain_3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/idea/ideapojie/jetbrain_3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ideapojie/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/idea/ideapojie/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/java/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/doc/ip.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/src/tests/cc_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/src/ui/main/fileb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go/src/ui/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/lsj/cc/flag/BoolFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/lsj/cc/flag/Flag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/lsj/cc/flag/StringFlag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/pkg/windows_amd64/conf.a" beforeDir="false" afterPath="$PROJECT_DIR$/go/pkg/windows_amd64/conf.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/conf/conf.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/conf/conf.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/conf/demo_conf_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/conf/demo_conf_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/tests/conf_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/tests/conf_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/lsj/cc/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/lsj/cc/Fan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,64 +85,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/config.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="299">
-                <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formate.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go/doc/formate.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-536" />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go/src/conf/app.conf">
+      <file leaf-file-name="conf_test.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go/src/tests/conf_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="284">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#15#62#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="idea.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea/idea.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="Fan.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/Fan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/flag/Flag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringFlag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/flag/StringFlag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding>
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoolFlag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/flag/BoolFlag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-284">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="e#180#181#0" expanded="true" />
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/idea/readme.md">
+        <entry file="file://$PROJECT_DIR$/docker/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="76">
-                <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <first_editor relative-caret-position="171">
+                <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="idealearn.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea/idealearn.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -140,44 +170,35 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="152">
-                <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <first_editor relative-caret-position="304">
+                <caret line="16" column="94" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/idea/ideapojie/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="209">
-                <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="Fan$A.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/Fan$A.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-109" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fan.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/Fan.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="38">
-                <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
+        <entry file="jar://E:/x64/java/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="2866" column="18" selection-start-line="2866" selection-start-column="18" selection-end-line="2866" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -187,8 +208,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Go File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -210,28 +231,37 @@
         <option value="$PROJECT_DIR$/linux/cmds/cpuinfo.md" />
         <option value="$PROJECT_DIR$/linux/cmds/cpu.md" />
         <option value="$PROJECT_DIR$/src/java/lsj/cc/fan.java" />
-        <option value="$PROJECT_DIR$/src/java/lsj/cc/Fan.java" />
         <option value="$PROJECT_DIR$/ideapojie/pojie.md" />
         <option value="$PROJECT_DIR$/idea/idealearn.md" />
         <option value="$PROJECT_DIR$/idea/idea.md" />
-        <option value="$PROJECT_DIR$/go/src/conf/app.conf" />
         <option value="$PROJECT_DIR$/go/doc/formate.md" />
         <option value="$PROJECT_DIR$/go/src/tools/post/post.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/go/src/conf/cli.go" />
         <option value="$PROJECT_DIR$/ideapojie/readme.md" />
-        <option value="$PROJECT_DIR$/go/src/main/main.go" />
         <option value="$PROJECT_DIR$/go/src/tools/get/get.go" />
         <option value="$PROJECT_DIR$/go/src/tools/websocket/websocket.go" />
         <option value="$PROJECT_DIR$/go/src/tools/websocket/so.go" />
-        <option value="$PROJECT_DIR$/go/src/tests/conf_test.go" />
-        <option value="$PROJECT_DIR$/go/src/conf/conf.go" />
-        <option value="$PROJECT_DIR$/go/src/conf/demo_conf_test.go" />
         <option value="$PROJECT_DIR$/java/config.md" />
         <option value="$PROJECT_DIR$/java/readme.md" />
         <option value="$PROJECT_DIR$/go/readme.md" />
         <option value="$PROJECT_DIR$/idea/readme.md" />
+        <option value="$PROJECT_DIR$/go/doc/ip.md" />
+        <option value="$PROJECT_DIR$/go/src/conf/conf.go" />
+        <option value="$PROJECT_DIR$/go/src/conf/app.conf" />
+        <option value="$PROJECT_DIR$/go/src/conf/demo_conf_test.go" />
+        <option value="$PROJECT_DIR$/go/src/main/main.go" />
+        <option value="$PROJECT_DIR$/go/src/ui/main/main.go" />
+        <option value="$PROJECT_DIR$/go/src/ui/main/fileb.go" />
+        <option value="$PROJECT_DIR$/go/src/tests/cc_test.go" />
+        <option value="$PROJECT_DIR$/go/src/tests/conf_test.go" />
+        <option value="$PROJECT_DIR$/src/java/lsj/cc/Fan.java" />
+        <option value="$PROJECT_DIR$/src/java/lsj/cc/flag/StringFlag.java" />
+        <option value="$PROJECT_DIR$/src/java/lsj/cc/flag/Flag.java" />
+        <option value="$PROJECT_DIR$/src/java/lsj/cc/flag/BoolFlag.java" />
+        <option value="$PROJECT_DIR$/docker/readme,md" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/docker/readme.md" />
       </list>
     </option>
   </component>
@@ -257,8 +287,8 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,27 +299,93 @@
             <path>
               <item name="learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="go" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="idea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="idea" type="462c0819:PsiDirectoryNode" />
-              <item name="ideapojie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cc" type="462c0819:PsiDirectoryNode" />
+              <item name="flag" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;learn&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;learn&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;learn&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;learn&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lxn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;learn&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lxn" type="462c0819:PsiDirectoryNode" />
+              <item name="walk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;learn&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lxn" type="462c0819:PsiDirectoryNode" />
+              <item name="walk" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;learn&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="lxn" type="462c0819:PsiDirectoryNode" />
+              <item name="walk" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="filebrowser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,7 +403,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/go/src/github.com/lxn" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="go.sdk" />
@@ -318,6 +414,11 @@
       <recent name="D:\learn\learn\go\src\conf" />
       <recent name="D:\learn\learn\ideapojie" />
       <recent name="D:\learn\learn" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\learn\learn\go\src\conf" />
+      <recent name="D:\learn\learn\go\src\main" />
+      <recent name="D:\learn\learn\idea" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -332,7 +433,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestName in conf">
+  <component name="RunManager" selected="Application.Fan (1)">
+    <configuration name="Fan (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lsj.cc.Fan" />
+      <module name="learn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lsj.cc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Fan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java.lsj.cc.Fan" />
+      <module name="learn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.lsj.cc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -343,39 +466,15 @@
       <filePath value="$PROJECT_DIR$" />
       <directory value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="go build conf.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learn" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go/src/conf/conf.go" />
-      <directory value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="go build get.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build fileb.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go/src/tools/get/get.go" />
+      <filePath value="$PROJECT_DIR$/go/src/ui/main/fileb.go" />
       <directory value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learn" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/go/src/main/main.go" />
-      <directory value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="TestName in conf" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="learn" />
-      <working_directory value="$PROJECT_DIR$/go/src/conf" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="conf" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^TestName$" />
-    </configuration>
-    <configuration name="TestTrim in tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test in tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learn" />
       <working_directory value="$PROJECT_DIR$/go/src/tests" />
       <go_parameters value="-i" />
@@ -384,7 +483,18 @@
       <package value="tests" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^TestTrim$" />
+      <pattern value="^Test$" />
+    </configuration>
+    <configuration name="Test_s in tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learn" />
+      <working_directory value="$PROJECT_DIR$/go/src/tests" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="tests" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^Test_s$" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <working_directory value="$PROJECT_DIR$" />
@@ -432,20 +542,29 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="lua.app" factoryName="Lua Application">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="" />
+      <option name="workingDir" value="$PROJECT_DIR$/src" />
+      <option name="debuggerType" value="1" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
+    </configuration>
     <list>
-      <item itemvalue="Go Test.TestName in conf" />
-      <item itemvalue="Go Build.go build main.go" />
-      <item itemvalue="Go Build.go build conf.go" />
-      <item itemvalue="Go Build.go build get.go" />
-      <item itemvalue="Go Test.TestTrim in tests" />
+      <item itemvalue="Go Build.go build fileb.go" />
+      <item itemvalue="Go Test.Test_s in tests" />
+      <item itemvalue="Go Test.Test in tests" />
+      <item itemvalue="Application.Fan" />
+      <item itemvalue="Application.Fan (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestName in conf" />
-        <item itemvalue="Go Test.TestTrim in tests" />
-        <item itemvalue="Go Build.go build get.go" />
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build conf.go" />
+        <item itemvalue="Application.Fan (1)" />
+        <item itemvalue="Application.Fan" />
+        <item itemvalue="Go Test.Test in tests" />
+        <item itemvalue="Go Test.Test_s in tests" />
+        <item itemvalue="Go Build.go build fileb.go" />
       </list>
     </recent_temporary>
   </component>
@@ -466,32 +585,13 @@
       <workItem from="1540371686110" duration="704000" />
       <workItem from="1541577494410" duration="15431000" />
       <workItem from="1541724064613" duration="826000" />
-      <workItem from="1542008460778" duration="2162000" />
+      <workItem from="1542008460778" duration="4924000" />
+      <workItem from="1542077578950" duration="6929000" />
+      <workItem from="1542175759763" duration="9138000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestTrim_in_tests - 2018.11.08 at 11h 20m 04s.xml">
-      <configuration name="TestTrim in tests" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestName_in_conf - 2018.11.08 at 11h 29m 27s.xml">
-      <configuration name="TestName in conf" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestName_in_conf - 2018.11.08 at 11h 29m 43s.xml">
-      <configuration name="TestName in conf" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestName_in_conf - 2018.11.08 at 11h 31m 13s.xml">
-      <configuration name="TestName in conf" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestName_in_conf - 2018.11.08 at 11h 31m 24s.xml">
-      <configuration name="TestName in conf" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestName_in_conf - 2018.11.08 at 11h 33m 28s.xml">
-      <configuration name="TestName in conf" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestName_in_conf - 2018.11.08 at 11h 33m 42s.xml">
-      <configuration name="TestName in conf" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestName_in_conf - 2018.11.08 at 11h 33m 50s.xml">
       <configuration name="TestName in conf" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -501,9 +601,30 @@
     <history-entry file="TestName_in_conf - 2018.11.08 at 11h 34m 10s.xml">
       <configuration name="TestName in conf" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestTrim_in_tests - 2018.11.13 at 12h 56m 34s.xml">
+      <configuration name="TestTrim in tests" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTrim_in_tests - 2018.11.13 at 13h 04m 03s.xml">
+      <configuration name="TestTrim in tests" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestTrim_in_tests - 2018.11.13 at 17h 21m 16s.xml">
+      <configuration name="TestTrim in tests" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_in_conf - 2018.11.13 at 17h 48m 20s.xml">
+      <configuration name="Test in conf" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_s_in_tests - 2018.11.14 at 14h 57m 57s.xml">
+      <configuration name="Test_s in tests" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_in_tests - 2018.11.14 at 15h 03m 01s.xml">
+      <configuration name="Test in tests" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_in_tests - 2018.11.14 at 15h 06m 23s.xml">
+      <configuration name="Test in tests" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26997000" />
+    <option name="totallyTimeSpent" value="45826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -521,15 +642,16 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.12181303" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="LuaCheck" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5679887" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38526914" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="CheckStyle" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.029745042" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2565104" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.44759208" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2565104" />
       <window_info anchor="right" id="SciView" order="6" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -559,202 +681,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/go/src/conf/conf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/conf/demo_conf_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/strings/strings.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11609">
-          <caret line="615" column="12" selection-start-line="615" selection-start-column="5" selection-end-line="615" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/go/src/tools/get/get.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/conf/cli.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/tests/conf_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/tools/websocket/websocket.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1957">
-          <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/conf/conf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/Fan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/cmds/cpuinfo.md" />
-    <entry file="file://$PROJECT_DIR$/src/java/lsj.cc" />
-    <entry file="file://C:/Go/src/os/proc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/os/env.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="138" column="5" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/shell/rmi.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/cmds/cpu.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/reflect/value.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="742" selection-start-line="742" selection-end-line="742" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/reflect/type.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="1127" selection-start-line="1127" selection-end-line="1127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/sync/pool.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/fmt/print.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="263" selection-start-line="263" selection-end-line="263" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/proc.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/tools/ls/ls.go" />
-    <entry file="file://$PROJECT_DIR$/go/src/tools/packet/packet.go" />
-    <entry file="file://$PROJECT_DIR$/go/src/tools/post/post.go" />
-    <entry file="file://$PROJECT_DIR$/go/src/tools/utils/file.go" />
-    <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/Fan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/main/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/conf/cli.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/tools/get/get.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/tests/conf_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -779,17 +709,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/conf/demo_conf_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Go/src/strings/strings.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11609">
           <caret line="615" column="12" selection-start-line="615" selection-start-column="5" selection-end-line="615" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/readme.nd" />
+    <entry file="file://$PROJECT_DIR$/go/doc/formate.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-536" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea/idea.md">
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea/idealearn.md">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea/ideapojie/readme.md">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="209">
+            <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/idea/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -800,36 +775,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/conf/conf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+    <entry file="file://$PROJECT_DIR$/linux/cmds/cpu.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/readme.nd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go/doc/formate.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-536" />
+          <first_editor />
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go/src/conf/app.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/config.md">
+    <entry file="file://$PROJECT_DIR$/go/doc/ip.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="299">
-            <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <first_editor relative-caret-position="418">
+            <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           </first_editor>
           <second_editor />
         </state>
@@ -838,8 +801,152 @@
     <entry file="file://$PROJECT_DIR$/java/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="57">
+            <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/config.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="190">
+            <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/testing/testing.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16378">
+          <caret line="878" selection-start-line="878" selection-end-line="878" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linux/shell/rmi.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/conf/demo_conf_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/conf/conf.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/main/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#14#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/declarative/splitter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-665">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/declarative/interfaces.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/declarative/pushbutton.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/declarative/font.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/declarative/brush.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/data/drawing.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/ui/main/fileb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="196" column="18" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/data/filebrowser.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/examples/filebrowser/filebrowser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/tools/ui2walk/ui2walk.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/declarative/action.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2223" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/mainwindow.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/declarative/mainwindow.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/tests/cc_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="e#15#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -853,59 +960,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea/idea.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/textedit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/github.com/lxn/walk/declarative/textedit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go/src/ui/main/main.go">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="e#14#95#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea/idealearn.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/go/src/tests/conf_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#15#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/idea/ideapojie/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="209">
-            <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/Fan$A.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/Fan.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/Fan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/x64/java/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="2866" column="18" selection-start-line="2866" selection-start-column="18" selection-end-line="2866" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/flag/Flag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/flag/StringFlag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/readme,md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/lsj/cc/flag/BoolFlag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="152">
-            <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/idea/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="76">
-            <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <first_editor relative-caret-position="304">
+            <caret line="16" column="94" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="171">
+            <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>

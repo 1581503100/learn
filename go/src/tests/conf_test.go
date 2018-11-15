@@ -4,22 +4,35 @@ import (
 	"conf"
 	"fmt"
 	"testing"
-	"strings"
+	"reflect"
 )
+
+type B struct{
+	Text string
+}
 
 type A struct {
 	Port          int
 	MysqlName     string
 	MysqlPassword string
+	Assign **B
 }
 
 func Test(t *testing.T) {
 	//
-	fmt.Println()
-	conf.Init("../conf/app.conf")
-	var a A
-	conf.Unmarshal(&a, "mysql.")
-	fmt.Println(a)
+	var b *B
+	a:=A{
+		Assign:&b,
+	}
+
+	bv:=&B{
+		Text:"sdfds",
+	}
+	a.Assign=&bv
+
+	a.Port=1
+	fmt.Println(b.Text)
+
 }
 
 func TestCLi(t *testing.T)  {
@@ -39,7 +52,11 @@ func TestCLi(t *testing.T)  {
 	fmt.Println(conf.String("port"))
 	fmt.Println(conf.String("name"))
 }
-func TestTrim(t *testing.T)  {
 
-	fmt.Println(strings.Trim(" !!!hello !!"," ! o"))
+var queue = make(chan func())
+
+func TestTrim(t *testing.T)  {
+	var s []string
+	fmt.Println(reflect.TypeOf(s))
+
 }
