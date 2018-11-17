@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<textarea id="text2" style="height: 400px;width: 300px" disabled></textarea>
+<input id="msg"/>
+<button onclick="send()">send</button>
+<script>
+    domain = document.domain
+    var conn = new WebSocket("ws://"+domain+":12345/ws")
+    conn.onclose = function (ev) {
+        alert("close")
+    }
+    conn.onmessage = function (ev) {
+        console.log(ev)
+        te = $("#text2").val()
+        msg=JSON.parse(ev.data)
+        $("#text2").val(te+msg.Msg+"\n")
+    }
+
+    function send() {
+        var data =JSON.stringify({
+            from:"",
+            to:"sdf",
+            msg:$("#msg").val()
+        })
+        conn.send(data)
+    }
+</script>
+
+</body>
+</html>

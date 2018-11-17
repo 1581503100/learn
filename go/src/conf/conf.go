@@ -59,10 +59,17 @@ func parserFile(file string) {
 }
 
 func parser(reader io.Reader) {
-	scaner := bufio.NewScanner(reader)
-	for scaner.Scan() {
-		line := scaner.Text()
-		addProperity(line)
+	scaner:=bufio.NewScanner(reader)
+	for scaner.Scan(){
+		line:=scaner.Text()
+		if(strings.HasPrefix(deleteSpace(line),"#") || len(line)==0 || !strings.Contains(line,"=")){
+			continue
+		}
+		lis:=strings.SplitN(line,"=",2)
+		if(len(lis) !=2 ){
+			continue
+		}
+		Set(deleteSpace(lis[0]),deleteExplain(lis[1]))
 	}
 	//callback functions while config is reload or init
 	for _, v := range reloadFuns {
@@ -74,16 +81,6 @@ func Set(k, v string) {
 	confMap[k] = v
 }
 
-func addProperity(line string) {
-	if (strings.HasPrefix(line, "#") || len(line) == 0 || !strings.Contains(line, "=")) {
-		return
-	}
-	lis := strings.SplitN(line, "=", 2)
-	if (len(lis) != 2) {
-		return
-	}
-	confMap[deleteSpace(lis[0])] = deleteSpace(lis[1])
-}
 
 //return int value of giving key
 func String(key string) string {
@@ -164,11 +161,20 @@ func Ints(k string)[]int  {
 	}
 	return vals
 }
+
 func trimStrs(ss []string) []string {
 	for i := 0; i < len(ss); i++ {
 		ss[i] = deleteSpace(ss[i])
 	}
 	return ss
+}
+
+func deleteExplain(s string)string  {
+	idx:=strings.Index(s,"#")
+	if(idx>0){
+		s =s[0:idx]
+	}
+	return s
 }
 
 //delete space '\n '\t' '\r' of begin and end of string
@@ -241,7 +247,7 @@ func Unmarshal(i interface{}, prefix string) {
 			v.Field(i).Set(reflect.ValueOf(Bool(key, false)));
 			break
 		case "[]string":
-			v.Field(i).Set(reflect.ValueOf(String(key)));
+			v.Field(i).Set(reflect.ValueOf(Strings(key)));
 			break
 		case "[]int":
 			v.Field(i).Set(reflect.ValueOf(Ints(key)));

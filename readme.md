@@ -9,7 +9,7 @@
 #### [idea](/idea)
 
 ---
-#### [websocket](https://blog.csdn.net/xuduorui/article/details/76464576)
+#### [websocket](https://blog.csdn.net/xuduorui/article/details/76464576) [websocket-demo](/go/src/wsockets/ws.go)
 
 ---
 #### [java](/java)
