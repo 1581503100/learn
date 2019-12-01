@@ -1,0 +1,10 @@
+#### 开机自启动
+ctrl+R->shell:start up -> 添加可执行的文件。
+后台运行vbs
+
+````
+Set Ws = CreateObject("Wscript.Shell")
+Ws.Run("egui.exe"),0
+Ws.Run("ekrn.exe"),0
+Ws.Run("ERAAgent.exe"),0
+````
